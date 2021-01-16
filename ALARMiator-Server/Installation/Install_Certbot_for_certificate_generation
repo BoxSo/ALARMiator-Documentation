@@ -17,3 +17,11 @@ Für Ubuntu bitte folgende befehle im Terminal ausführen:
    sudo chmod 755 /etc/letsencrypt/renewal-hooks/pre/haproxy.sh
    
    sudo chmod 755 /etc/letsencrypt/renewal-hooks/post/haproxy.sh
+   
+Damit die Zertifikate nun auch vom Server genutzt werden bitte noch die folgenden befehle ausführen:
+
+   sudo chmod 0755 /etc/letsencrypt/{live,archive}
+   
+   sudo ln -s /etc/letsencrypt/live/```<yoururl.xyz>```/privkey.pem privkey.pem
+
+   sudo ln -s /etc/letsencrypt/live/```<yoururl.xyz>```/cert.pem cert.pem

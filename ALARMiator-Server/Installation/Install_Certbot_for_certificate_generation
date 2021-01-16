@@ -14,9 +14,9 @@ Für Ubuntu bitte folgende befehle im Terminal ausführen:
    
    sudo sh -c 'printf "#!/bin/sh\npm2 start /git/ALARMiator-Server/alarmiator_pm2.yml\n" > /etc/letsencrypt/renewal-hooks/post/alarmiator_server.sh'
    
-   sudo chmod 755 /etc/letsencrypt/renewal-hooks/pre/haproxy.sh
+   sudo chmod 755 /etc/letsencrypt/renewal-hooks/pre/alarmiator_server.sh
    
-   sudo chmod 755 /etc/letsencrypt/renewal-hooks/post/haproxy.sh
+   sudo chmod 755 /etc/letsencrypt/renewal-hooks/post/alarmiator_server.sh
    
 Damit die Zertifikate nun auch vom Server genutzt werden bitte noch die folgenden befehle ausführen:
 

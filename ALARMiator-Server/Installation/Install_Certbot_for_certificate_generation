@@ -1,0 +1,19 @@
+Für Ubuntu bitte folgende befehle im Terminal ausführen:
+   
+   sudo snap install core; sudo snap refresh core
+   
+   sudo snap install --classic certbot
+   
+   sudo ln -s /snap/bin/certbot /usr/bin/certbot
+   
+   sudo certbot certonly --standalone
+   
+   sudo certbot renew --dry-run
+    
+   sudo sh -c 'printf "#!/bin/sh\npm2 stop /git/ALARMiator-Server/alarmiator_pm2.yml\n" > /etc/letsencrypt/renewal-hooks/pre/alarmiator_server.sh'
+   
+   sudo sh -c 'printf "#!/bin/sh\npm2 start /git/ALARMiator-Server/alarmiator_pm2.yml\n" > /etc/letsencrypt/renewal-hooks/post/alarmiator_server.sh'
+   
+   sudo chmod 755 /etc/letsencrypt/renewal-hooks/pre/haproxy.sh
+   
+   sudo chmod 755 /etc/letsencrypt/renewal-hooks/post/haproxy.sh

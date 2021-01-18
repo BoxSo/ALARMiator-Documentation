@@ -22,8 +22,14 @@ Für Ubuntu bitte folgende befehle im Terminal ausführen:
    
 Damit die Zertifikate nun auch vom Server genutzt werden bitte noch im certificates-Ordner die folgenden befehle ausführen:
 
+Für das WebInterface:
+   cd <git-repository>/certificates
    sudo ln -s /etc/letsencrypt/live/```<yoururl.xyz>```/privkey.pem privkey.pem
-
+   sudo ln -s /etc/letsencrypt/live/```<yoururl.xyz>```/cert.pem cert.pem
+   
+Für die API
+   cd <git-repository>/plugins/inbound/api/certificates
+   sudo ln -s /etc/letsencrypt/live/```<yoururl.xyz>```/privkey.pem privkey.pem
    sudo ln -s /etc/letsencrypt/live/```<yoururl.xyz>```/cert.pem cert.pem
    
 ACHTUNG: Werden die Zertifikate durch certbot erneuert, so wird der ALARMiator_Server automatisch neu gestartet!

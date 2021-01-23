@@ -12,9 +12,9 @@ Für Ubuntu bitte folgende befehle im Terminal ausführen:
 
    sudo certbot renew --dry-run
     
-   sudo sh -c 'printf "#!/bin/sh\npm2 stop /git/ALARMiator-Server/alarmiator_pm2.yml\n" > /etc/letsencrypt/renewal-hooks/pre/alarmiator_server.sh'
+   sudo sh -c 'printf "#!/bin/sh\npm2 stop /home/```<username>```/git/ALARMiator-Server/alarmiator_pm2.yml\n" > /etc/letsencrypt/renewal-hooks/pre/alarmiator_server.sh'
    
-   sudo sh -c 'printf "#!/bin/sh\npm2 start /git/ALARMiator-Server/alarmiator_pm2.yml\n" > /etc/letsencrypt/renewal-hooks/post/alarmiator_server.sh'
+   sudo sh -c 'printf "#!/bin/sh\npm2 start /home/```<username>```/git/ALARMiator-Server/alarmiator_pm2.yml\n" > /etc/letsencrypt/renewal-hooks/post/alarmiator_server.sh'
    
    sudo chmod 755 /etc/letsencrypt/renewal-hooks/pre/alarmiator_server.sh
    

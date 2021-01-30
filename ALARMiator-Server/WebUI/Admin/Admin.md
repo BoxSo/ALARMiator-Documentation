@@ -20,7 +20,7 @@ Hier können die Zugangsdaten für einen E-Mail-Provider hinterlegt werden. Übe
 
 ### ***Weboberfläche***
 Hier kann definiert werden über welche wege die Weboberfläche erreichbar ist. Für Https muss ein Zertifcat im Server hinterlegt sein.  
-Eine Anleitung zur Einrichtung ist unter "[CertBot installation](ALARMiator-Server\Installation\CertBot_installation.md)" zu finden.
+Eine Anleitung zur Einrichtung ist unter "[CertBot installation](ALARMiator-Server/Installation/CertBot_installation.md)" zu finden.
 * Http
 * Http und Https
 * Https
@@ -30,9 +30,9 @@ Trage hier die Zeit in Minuten ein, die eine eingehende Alarmierung alt sein dar
 
 ## ***Plugins***
 ### ***Liste***
-[PluginManager](ALARMiator-Server\WebUI\Admin\Plugins\PluginManager.md)
-* [Plugins](ALARMiator-Server\WebUI\Admin\Plugins\Plugins.md)
-  * [Telegram](ALARMiator-Server\WebUI\Admin\Plugins\Telegram-Plugin.md)
+[PluginManager](ALARMiator-Server/WebUI/Admin/Plugins/PluginManager.md)
+* [Plugins](ALARMiator-Server/WebUI/Admin/Plugins/Plugins.md)
+  * [Telegram](ALARMiator-Server/WebUI/Admin/Plugins/Telegram-Plugin.md)
 
 ### ***Events***
 Hier findet man events zum auslösen eines Probealarms um den weg zu verifizieren den eine Alarmierung durch den Server nimmt.

@@ -32,7 +32,7 @@ Hier erhält man grundlegende Informationen über die aktuell aktiven eingehende
   ### ***Liste***
   Hier kann die Liste aller auf dem ALARMiator-Server verfügbaren [Plugins](Plugins/Plugins.md) eingesehen werden.  
   Diese List ist in zwei Bereiche aufgeteilt:
-  * eingehend  
+  * #### eingehend  
     Unter eingehenden Plugins versteht man Plugins über die Daten zum ALARMiator-Server gelangen.
     * REST-API   
       Dieses Plugin wird von der ALARMiator-Mobile APP verwendet um vom Smartphone Daten an den Server zu senden.
@@ -43,7 +43,7 @@ Hier erhält man grundlegende Informationen über die aktuell aktiven eingehende
     * Externe IP Adresse  
       Hierüber ermittelt der ALARMiator-Server alle 60 Sekunden seine IP-Adresse über die er aus dem Internet erreichbar ist.
     
-  * ausgehend
+  * #### ausgehend
     * DynDNSS Agent  
       Aktualisiert alle 60 Sekunden eine Domain beim Anbieter DynDNSS.net. Unter dieser Domain ist der Server dann auch mit dynamischer IP-Adresse erreichbar.
 

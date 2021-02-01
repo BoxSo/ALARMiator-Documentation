@@ -30,9 +30,49 @@ Trage hier die Zeit in Minuten ein, die eine eingehende Alarmierung alt sein dar
 
 ## ***Plugins***
 ### ***Liste***
-[PluginManager](ALARMiator-Server/WebUI/Admin/Plugins/PluginManager.md)
-* [Plugins](ALARMiator-Server/WebUI/Admin/Plugins/Plugins.md)
-  * [Telegram](ALARMiator-Server/WebUI/Admin/Plugins/Telegram-Plugin.md)
+Hier kann die Liste aller auf dem ALARMiator-Server verfügbaren Plugins eingesehen werden.  
+Diese List ist in zwei Bereiche aufgeteilt:
+* eingehend  
+  Unter eingehenden Plugins versteht man Plugins über die Daten zum ALARMiator-Server gelangen.
+  * REST-API   
+    Dieses Plugin wird von der ALARMiator-Mobile APP verwendet um vom Smartphone Daten an den Server zu senden.
+  
+  * KatSys Cloud Connector  
+    Hierüber empfängt der ALARMiator-Server die Alarmierungen für die Wehren die er verwaltet.
+  
+  * Externe IP Adresse  
+    Hierüber ermittelt der ALARMiator-Server alle 60 Sekunden seine IP-Adresse über die er aus dem Internet erreichbar ist.
+  
+* ausgehend
+  * DynDNSS Agent  
+    Aktualisiert alle 60 Sekunden eine Domain beim Anbieter DynDNSS.net. Unter dieser Domain ist der Server dann auch mit dynamischer IP-Adresse erreichbar.
+
+  * EMail Versand  
+    Versendet EMails bei definierten Events (Alarmierung, Statuswechsel, etc.)
+  
+  * Firebase Cloud Messaging  
+    Versendet bei Alarmierungen Push-Nachrichten per Firebase Cloud Messaging
+  
+  * MQTT Client  
+    Stellt Alarmierungen, Statuswechsel, etc. einem MQTT Server zur Verfügung.
+  
+  * Versand von SMS  
+    Versendet SMS über den Dienstleister SMS77.io (Account notwendig).
+  
+  * Telegram  
+    Versendet Push-Nachrichten per Telegram bei definierten Events (Alarmierung, Statuswechsel, etc.)
+  
+  * ALARMiator Wallboard  
+    Der Alarmmonitor des ALARMiator Servers zur Darstellung von Alarmierungen in Geräthaus, Fahrzeughalle oder unterwegs.
+  
+  * ALARMiator Mobile  
+    Versendet bei Alarmierungen Push-Nachrichten an ALARMiator Mobile
+  
+  * DIVERA 247 Connector  
+    Versand von Alarmierungen, Status-Updates und Nachrichten an DIVERA247 Anwender.
+  
+  * ALARMDEPECHE  
+    Erzeugt eine Alarmdepesche mit Karte der Einsatzstelle und sendet sie an den Standarddrucker.
 
 ### ***Events***
 Hier findet man events zum auslösen eines Probealarms um den weg zu verifizieren den eine Alarmierung durch den Server nimmt.

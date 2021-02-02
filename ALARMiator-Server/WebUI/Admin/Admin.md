@@ -102,6 +102,9 @@ Verwaltung von Log-Dateien der ALARMiator-Server Instanz.
   - *Wiederherstellen* einer Sicherung. (d.h. diese Sicherung wird auf dem Server eingespielt. Der Server wird hierzu nach dem Einspielen neu gestartet!)
   - *löschen* einer Sicherung
 
+## ***Aufgaben-Verwaltung***
+  Unter Aufgabenverwaltung sind alle Aufgaben die der ALARMiator-Server zu einer Bestimmten Uhrzeit und/oder zyklisch wiederkehrend ausführen soll aufgelistet. In der Tabelle ist der Name der Aufgabe, die letzte Ausführungs-Zeit, die nächste Ausführungs-Zeit, der Typ der Aufgabe und der Status aktiv/inaktiv aufgelistet. In die Spalte "Status" kann man durch einen Klick auf den Status der Aufgabe zwischen aktiv und inaktiv umschalten. 
+
 ## ***System***
   ### ***System neustarten***
   Der ALARMiator-Server führt einen Neustart aus.

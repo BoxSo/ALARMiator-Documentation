@@ -3,7 +3,6 @@
   Zum einen wie viele Alarmierungsprofile aktuell aktiv sind und zum Anderen ob noch Endgeräte zur Aktivierung ausstehen.
   
 # Matrix
-
 Die Matrix bilded alle Mitglieder von Organisationen welche im ALARMiator-Server hinterlegt sind und die im ALARMiator-Server aktiven Alarmierungswege ab. Dadurch ist es möglich für jedes Mitglied seperat zu entscheiden über welchen Alarmierungsweg im Einsatzfall alarmiert wird.  
 Hierzu muss ediglich in der Zeile des Mitglieds in der Jeweiligen Spalte des Alarmierungsweges die Hacken gesetzt sein.  
 Über den blauen Knopf neben der Checkbox kann eine Beispielalarm für exakt dieses eine Mitglied über diesen Alarmierungsweg ausgelöst werden.
@@ -31,6 +30,7 @@ Hier muss ein Name für das neue Endgerät angegeben werden so wie dieses Endger
 
 # Tokens
 * ## Liste
+
 * ## neu anlegen
 
 # Wallboardprofile

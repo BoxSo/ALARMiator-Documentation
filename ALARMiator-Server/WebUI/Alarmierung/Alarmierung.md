@@ -11,18 +11,18 @@ Hierzu muss ediglich in der Zeile des Mitglieds in der Jeweiligen Spalte des Ala
 ## ***Liste***
 Die Liste der Endgeräte beinhaltet alle Smartphones die für die Zusatzalarmierung am ALARMiator-Server angelegt sind. Dies können zum einen durch das Anmelden aus der ALARMiator-Mobile-APP hinzugefügt werden als auch durch den Administrator des Servers Manuel Angelegt werden.  
 Jedes Endgerät das dieser Liste hinzugefügt wird löst eine Benachrichtigung an den Administratzor des ALARMiator-Servers aus und muss erst durch ihn zur Alarmierung aktiviert werden.  
->In der Liste enthaltene Informationen:
->- Besitzer des Endgerätes
->- Name des Endgerätes
->- Model des Endgerätes
->- Plattform ( Android / iOS )
->- Version
->- letzter Kontakt
->- Registrierungsdatum  
+In der Liste enthaltene Informationen:
+- Besitzer des Endgerätes
+- Name des Endgerätes
+- Model des Endgerätes
+- Plattform ( Android / iOS )
+- Version
+- letzter Kontakt
+- Registrierungsdatum  
 
->mögliche Aktionen die an einem Endgerät ausgeführt werden können:
->- aktivieren / deaktivieren
->- löschen
+mögliche Aktionen die an einem Endgerät ausgeführt werden können:
+- aktivieren / deaktivieren
+- löschen
 
 ## ***neu anlegen***
 Mit eine Klick auf diesen Menüeintrag öffnet sich die Seite zum manuellen neu anlegen eines Endgerätes.  
@@ -33,9 +33,9 @@ Hier muss ein Name für das neue Endgerät angegeben werden so wie dieses Endger
 Auf dieser Seite werden alle im ALARMiator-Server hinterlegten Token so wie deren Alarmierungsweg angezeigt. Über den Alarmierungsweg ist zu sehen über welche APP eine Alarmierung für dieses Gerät erfolgt. Dies kann zum einen die ALARMiator-Mobile-APP aber auch die FAlarm oder ALARMiator-APP sein. FAlarm und ALARMiator werden als altfunktionaliät aktuell noch unterstützt.  
 Des Weiteren ist in der Liste zu sehen um welches Gerät es sich handelt und werd er Besitzer des Gerätes ist.
 
->mögliche Aktionen die an einem Endgerät ausgeführt werden können:
->- aktivieren / deaktivieren
->- löschen
+mögliche Aktionen die an einem Endgerät ausgeführt werden können:
+- aktivieren / deaktivieren
+- löschen
 
 ## ***neu anlegen***
 Mit einem klick auf diesen Menü-Eintrag öffnet sich die Seite um ein Token für ein bereits existierendes Gerät manuel anzulegen.
@@ -78,7 +78,8 @@ folgende Kriterien können bei einer Alarmierung zur validierung herangezogen we
 * Uhrzeitbereich
 * Schleifencode
 * Einsatzmittel
-* Stichwort
+* Stichwort  
+
 Diese könne über den "+"-Knopf zum Alarmierungsprofil hinzugefügt werden. Nach dem Hinzufügen muss dieses über die angeforderten Parameter genauer spezifiziert werden.  
 Im bereich "Zu alarmierende Gruppen" kann ausgewählt werden welche Gruppen welcher Wehr alarmiert werden. Achtung: hierzu müssen die Mitglieder einer Wehr einer Gruppe in dieser Zugeordnet sein. Ein Mitglied das keiner Gruppe zugeordnet ist wird im Einstzfall nicht Alarmiert!
 

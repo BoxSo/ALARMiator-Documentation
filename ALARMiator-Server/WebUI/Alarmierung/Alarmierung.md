@@ -57,15 +57,37 @@ Hier können Rückmeldungen aktiviert/deaktiviert werden so wie deren Sortierung
 ## ***Gruppe hinzufügen***
 
 # ***Alarmierungsprofile***
+Der ALARMiator-Server ist grundsätzlich in der Lage bei einer eingehenden Alarmierung, Beispielsweise über das KatSys-Plugin, anhand der Alarmierungsdaten nur die tatsächlich in der Alarmierung enthaltenen Einsatzkräfte zu alarmieren.
+Hierzu dienen die Alarmierungsprofile.  
+Ein Alarmierungsprofil beinhaltet die Information welche Einsatzkräfte bei welchem Stichwort oder erfülltem Kriterium alarmiert werden.
 ## ***Liste***
+Hier findet man alle auf dem ALARMiator-Server hinterlegten Alarmierungsprofile so wie deren Status (aktiv/inaktiv) in einer Liste.  
+Mit dem Knof "Test aller Regeln" hat man die Möglichkeit alle Alarmierungsprofile mit einem Einsatz aus der Einsatzliste des ALARMiator-Servers zu testen. Als Ergbnis erhält man eine Liste mit allen alarmierten Einsatzkräften und Feuerwehren.    
+Über Knopf "+" kann ein neues Alarmierungsprofil agelegt werden. Genauere Informationen zum Anlegen eines neuen Alarmierungsprofils findet man unter dem Punkt "neu anlegen".  
+
+Folgende Aktionen können an einem Alarmierungsprofil ausgeführt werden:
+* "Test Regel" bietet die Möglichkeit einen Alarmierungsprofil gegen einen bereits existieruenden Einsat zu Prüfen. Als Ergebnis erhält man eine Liste mit allen alarmierten Einsatzkräften und Feuerwehren.
+* deaktivieren/aktivieren" gibt an ob ein Alarmierungsprofil bei einem eingehenden alarm zur validierung der zu alarmierenden Einsatzkräfte herangezogen wird oder nicht.
+* "andern" öffnet das Alarmierungsprofil un bietet die Möglichkeit die Daten des Profils anzupassen.
+* "löschen" löscht das Alarmierierungsprofile unwiederbringlich vom Server  
+
 ## ***neu anlegen***
+Über diesen Menü-Eintrag gelangt man zur Seite um ein neues Alarmmierungsprofil anzulegen. Zunächst muss hier ein eindeutiger Name Name für das neue Profil vergeben werden. Der status des neuen Profils kann direkt beim Anlegen auf aktiv oder inaktiv gesetzt werden.  
+folgende Kriterien können bei einer Alarmierung zur validierung herangezogen werden:
+* Wochentag
+* Uhrzeitbereich
+* Schleifencode
+* Einsatzmittel
+* Stichwort
+Diese könne über den "+"-Knopf zum Alarmierungsprofil hinzugefügt werden. Nach dem Hinzufügen muss dieses über die angeforderten Parameter genauer spezifiziert werden.  
+Im bereich "Zu alarmierende Gruppen" kann ausgewählt werden welche Gruppen welcher Wehr alarmiert werden. Achtung: hierzu müssen die Mitglieder einer Wehr einer Gruppe in dieser Zugeordnet sein. Ein Mitglied das keiner Gruppe zugeordnet ist wird im Einstzfall nicht Alarmiert!
 
 # ***Probealarmierung***
->Hinter diesem Unterbereich findet man die Möglichkeit für die Organisationen die im ALARMiator-Server hinterlegt sind wiederkerende Probealarme zu hinterlegen. Diese dienen vorrangig der Überprüfung der Alarmierungswege. Grundsätzlich bedeutet dies, das zu einer Angegeben Zeit eine alarm_event ausgelöst wird, der dan je nach Einstellungen in den Alarmierungsprofielen die dem entsprechenden Endgeräte auslöst. 
->## ***Verwaltung***
->Unter Varwaltung ist eine Liste alle auf dem ALARMiator-Server Hinterlegten Probealarme zu finden. Über diese Liste ist es möglich Probealarme zu aktivieren und deaktivieren so wie diese zu bearbeiten und zu löschen.  
+Hinter diesem Unterbereich findet man die Möglichkeit für die Organisationen die im ALARMiator-Server hinterlegt sind wiederkerende Probealarme zu hinterlegen. Diese dienen vorrangig der Überprüfung der Alarmierungswege. Grundsätzlich bedeutet dies, das zu einer Angegeben Zeit eine alarm_event ausgelöst wird, der dan je nach Einstellungen in den Alarmierungsprofielen die dem entsprechenden Endgeräte auslöst. 
+## ***Verwaltung***
+Unter Varwaltung ist eine Liste alle auf dem ALARMiator-Server Hinterlegten Probealarme zu finden. Über diese Liste ist es möglich Probealarme zu aktivieren und deaktivieren so wie diese zu bearbeiten und zu löschen.  
 Über den Knopf "neuen Probealarm anlegen" ist es möglich einen neuen Probealarm anzulegen. Hierbei ist es wichtig dass der Probealarm einen Eindeutigen Namen bekommt, der noch nicht auf dem Server existiert. Des Weiteren wird hier die Zeit der Ausführung des Probealarms hinterlegt, so wie alle weiteren Informationen die für eine Probealarmierung notwendig sind.  
 Die Felder sind hier mit Beispielwerten befüllt und müssen vor dem Speicher angepasst werden, so das diese auch eien Alarmierung auslösen wenn sie durch eine Alarmierungsregel validiert werden.
->## ***Probealarmierungen***
->Unter diesem Punkt findet man alle bisher ausgelösten Probealarmierungen und kann diese hier löschen oder Einsicht in die Details nehmen.  
+## ***Probealarmierungen***
+Unter diesem Punkt findet man alle bisher ausgelösten Probealarmierungen und kann diese hier löschen oder Einsicht in die Details nehmen.  
 Unter den Details findet man auch die Informationen zur Rückmeldung der einzelnen alarmierten Einsatzkräfte.

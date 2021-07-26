@@ -31,13 +31,6 @@ anschliesen den Server neu starten und mit dem neu angelegten Benutzer einlogen
 
 `PATH=”$PATH:/usr/bin/python2” && PATH=”$PATH:/usr/bin/python”`
 
-
-`sudo apt-get install ghostscript libgs-dev`
-
-`echo GS4JS_HOME=/usr/lib/aarch64-linux-gnu >> .profile`
-
-`sudo ln -s $GS4JS_HOME/libgs.so cd /usr/lib/x86_64-linux-gnu/libgs.so`
-
 abschließend das System einmal neu starten.
 
 # installation von Node.js 14 lts

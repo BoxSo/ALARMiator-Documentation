@@ -1,1 +1,0 @@
-# ALARMiator Handbuch

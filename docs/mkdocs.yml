@@ -3,4 +3,5 @@ pages:
 - 'about.md'
 
 theme:
-    name: bootstrap
+    name: mkdocs
+    nav_style: dark

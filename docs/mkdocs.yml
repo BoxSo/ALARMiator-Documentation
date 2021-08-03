@@ -1,7 +1,7 @@
 pages:
 - 'index.md'
+- 'server.md'
+- 'mobileapps.md'
 - 'about.md'
 
-theme:
-    name: readthedocs
-    nav_style: dark
+theme: readthedocs

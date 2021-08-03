@@ -1,3 +1,5 @@
+[![Documentation Status](https://readthedocs.org/projects/alarmiator-documentation/badge/?version=latest)](https://alarmiator-documentation.readthedocs.io/en/latest/?badge=latest)
+
 Hier findest Du stets die aktuellste Version der Dokumentation für ALARMiator (https://www.alarmiator.de)
 ---
 #

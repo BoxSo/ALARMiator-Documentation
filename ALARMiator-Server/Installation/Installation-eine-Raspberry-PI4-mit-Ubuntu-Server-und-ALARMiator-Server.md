@@ -20,11 +20,11 @@ anschliesen den Server neu starten und mit dem neu angelegten Benutzer einlogen
 `sudo apt-get update && sudo apt-get upgrade && sudo apt update && sudo apt upgrade && sudo apt-get autoremove`
 
 # installieren der Abhängigkeiten und setzen der notwendigen Umgebungsvariablen
-`sudo apt-get install -y apt-utils python2 curl libcups2-dev git gcc g++ make locate sqlite3 libsqlite3-dev ng-common`
-`sudo apt-get autoremove`
-`sudo updatedb`
-`sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1`
-`PATH=”$PATH:/usr/bin/python2” && PATH=”$PATH:/usr/bin/python”`
+`sudo apt-get install -y apt-utils python2 curl libcups2-dev git gcc g++ make locate sqlite3 libsqlite3-dev ng-common`<br>
+`sudo apt-get autoremove`<br>
+`sudo updatedb`<br>
+`sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1`<br>
+`PATH=”$PATH:/usr/bin/python2” && PATH=”$PATH:/usr/bin/python”`<br>
 
 optional:
 `sudo apt-get install ghostscript libgs-dev`

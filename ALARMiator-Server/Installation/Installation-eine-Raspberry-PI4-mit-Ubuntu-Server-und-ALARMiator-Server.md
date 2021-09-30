@@ -44,7 +44,7 @@ abschließend das System einmal neu starten.
 
 # installation der NPM-Pakete
 `npm install sqlite3`<br>
-`npm intall`<br>
+`npm install`<br>
 `npm rebuild sqlite3`<br>
 
 # Installieren und starten des Servers mit PM2

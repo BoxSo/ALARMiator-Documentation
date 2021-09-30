@@ -5,19 +5,17 @@
 # Ablauf der installation nach dem ersten boot der frischen SD-Karte:
 Anlegen eines neuen Benutzers unter dem der ALARMiator-Server betrieben wird.
 
-`sudo adduser alarmiator`
-
-`sudo usermod -aG sudo alarmiator` 
+`sudo adduser alarmiator`<br>
+`sudo usermod -aG sudo alarmiator`<br> 
 
 anschliesen den Server neu starten und mit dem neu angelegten Benutzer einlogen
 
 # Anpassen des Hostnames:
-`sudo nano /etc/hostname --> add new hostname`
-
-`sudo nano /etc/hosts --> replace any existing ocurrence of the old name with the new name`
+`sudo nano /etc/hostname --> add new hostname`<br>
+`sudo nano /etc/hosts --> replace any existing ocurrence of the old name with the new name`<br>
 
 # Betriebssystem Update
-`sudo apt-get update && sudo apt-get upgrade && sudo apt update && sudo apt upgrade && sudo apt-get autoremove`
+`sudo apt-get update && sudo apt-get upgrade && sudo apt update && sudo apt upgrade && sudo apt-get autoremove`<br>
 
 # installieren der Abhängigkeiten und setzen der notwendigen Umgebungsvariablen
 `sudo apt-get install -y apt-utils python2 curl libcups2-dev git gcc g++ make locate sqlite3 libsqlite3-dev ng-common`<br>
@@ -26,36 +24,36 @@ anschliesen den Server neu starten und mit dem neu angelegten Benutzer einlogen
 `sudo update-alternatives --install /usr/bin/python python /usr/bin/python2 1`<br>
 `PATH=”$PATH:/usr/bin/python2” && PATH=”$PATH:/usr/bin/python”`<br>
 
-optional:
-`sudo apt-get install ghostscript libgs-dev`
-`echo GS4JS_HOME=/usr/lib/aarch64-linux-gnu >> .profile`
-`sudo ln -s $GS4JS_HOME/libgs.so cd /usr/lib/x86_64-linux-gnu/libgs.so`
+optional:<br>
+`sudo apt-get install ghostscript libgs-dev`<br>
+`echo GS4JS_HOME=/usr/lib/aarch64-linux-gnu >> .profile`<br>
+`sudo ln -s $GS4JS_HOME/libgs.so cd /usr/lib/x86_64-linux-gnu/libgs.so`<br>
 
 abschließend das System einmal neu starten.
 
-# installation von Node.js 14 lts
-`curl -sL https://deb.nodesource.com/setup_lts.x | sudo bash -`
-`sudo apt-get install -y nodejs`
+# installation von Node.js 14 lts<br>
+`curl -sL https://deb.nodesource.com/setup_lts.x | sudo bash -`<br>
+`sudo apt-get install -y nodejs`<br>
 
 # clonen des ALARMiator-Server Repositorys
-`mkdir git`
-`cd git`
-`git clone https://github.com/BoxSo/ALARMiator-Server.git`
-`cd ALARMiator-Server`
+`mkdir git`<br>
+`cd git`<br>
+`git clone https://github.com/BoxSo/ALARMiator-Server.git`<br>
+`cd ALARMiator-Server`<br>
 
 
 # installation der NPM-Pakete
-`npm install sqlite3`
-`npm intall`
-`npm rebuild sqlite3`
+`npm install sqlite3`<br>
+`npm intall`<br>
+`npm rebuild sqlite3`<br>
 
 # Installieren und starten des Servers mit PM2
-`sudo npm install -g pm2`
-`pm2 start alarmiator_pm2.yml`
+`sudo npm install -g pm2`<br>
+`pm2 start alarmiator_pm2.yml`<br>
 
 
 # Server-start im autostart mit einbinden
-`pm2 startup`
+`pm2 startup`<br>
 
 --> anschliesende den Anweisungen folgen
 

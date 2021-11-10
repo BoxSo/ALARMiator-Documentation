@@ -12,7 +12,7 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
 sudo certbot certonly --standalone
 
-sudo chmod 0755 /etc/letsencrypt/{live,archive}
+sudo chmod -R 0755 /etc/letsencrypt/{live,archive}
 
 sudo certbot renew --dry-run
 
@@ -22,7 +22,7 @@ sudo sh -c 'printf "#!/bin/sh\npm2 start /home/```<username>```/git/ALARMiator-S
 
 sudo chmod -R 755 /etc/letsencrypt/renewal-hooks/pre/alarmiator_server.sh
 
-sudo chmod -R 755 /etc/letsencrypt/renewal-hooks/post/alarmiator_server.sh```
+sudo chmod -R 755 /etc/letsencrypt/renewal-hooks/post/alarmiator_server.sh
 ```
 Damit die Zertifikate nun auch vom Server genutzt werden bitte noch im certificates-Ordner die folgenden befehle ausführen:
 

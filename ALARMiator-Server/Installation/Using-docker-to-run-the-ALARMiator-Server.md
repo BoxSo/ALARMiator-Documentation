@@ -15,17 +15,14 @@ This can be don with the ```-p <port at localhost>:<port in docker-container>```
 The following ports are needed:
 * Webinterface: ```-p 5001:5000```
 * API: ```-p 5010:5010```
-* socket.io: ```-p 5555:5555```
-* API-HTTPS: ```-p 5443:5443```
 * Wallboard: ```-p 5020:5020```
-* Wallboard: ```-p 40510:40510```
-
+* socket.io: ```-p 5555:5555```
 
 ## run a container
-execute ```docker run --name alarmiator-server-demo -p 5001:5000 -p 40510:40510 -p 5443:5443 -p 5555:5555 -p 5020:5020 -d alarmiatorserver:demo``` for testing
+execute ```docker run --name alarmiator-server-demo -p 5001:5000 -p 5010:5010 -p 5020:5020 -p 5555:5555 -d alarmiatorserver:demo``` for testing
 
 If you want to run ALARMiator-Server permanently use the following command:
-```docker run --name alarmiator-server -p 5001:5000 -p 5010:5010 -p 40510:40510 -p 5443:5443 -p 5555:5555 -p 5020:5020 -d --restart always alarmiatorserver:demo```
+```docker run --name alarmiator-server -p 5001:5000 -p 5010:5010 -p 5020:5020 -p 5555:5555 -d --restart always alarmiatorserver:demo```
 
 The ALARMiator-Server is now reachable at http://localhost:5001
 
@@ -39,10 +36,10 @@ This can be don with the ```-v <path on localhost>:<path in docker-container>```
 * public: ```-v /git/ALARMiator-Server/public/assets/img:/alarmiatorserver/public/assets/img```
 
 here a example how to use that for your alarmiator-server container:
-```docker run --name alarmiator-server -p 5001:5000 -p 5010:5010 -p 40510:40510 -p 5443:5443 -p 5555:5555 -p 5020:5020 -v /git/ALARMiator-Server/store:/alarmiatorserver/store -v /git/ALARMiator-Server/public/assets/img:/alarmiatorserver/public/assets/img -d --restart always alarmiatorserver:demo```
+```docker run --name alarmiator-server -p 5001:5000 -p 5010:5010 -p 5020:5020 -p 5555:5555 -v /git/ALARMiator-Server/store:/alarmiatorserver/store -v /git/ALARMiator-Server/public/assets/img:/alarmiatorserver/public/assets/img -d --restart always alarmiatorserver:demo```
 
 For a development-environment it is recomented to use ```-v /git/ALARMiator-Server:/alarmiatorserver```
 because of the docker-container is starting the server with PM2 this has the advantage that on any code-change the server will restart automatically.
 
 here a example how to use that for your alarmiator-server container in development:
-```docker run --name alarmiator-server -p 5001:5000 -p 5010:5010 -p 40510:40510 -p 5443:5443 -p 5555:5555 -p 5020:5020 -v /git/ALARMiator-Server:/alarmiatorserver -d --restart always alarmiatorserver:demo```
+```docker run --name alarmiator-server -p 5001:5000 -p 5010:5010 -p 5020:5020 -p 5555:5555 -v /git/ALARMiator-Server:/alarmiatorserver -d --restart always alarmiatorserver:demo```

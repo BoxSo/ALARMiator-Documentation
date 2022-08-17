@@ -15,6 +15,7 @@ This can be don with the ```-p <port at localhost>:<port in docker-container>```
 The following ports are needed:
 * Webinterface: ```-p 5001:5000```
 * API: ```-p 5010:5010```
+* socket.io: ```-p 5555:5555```
 * API-HTTPS: ```-p 5443:5443```
 * Wallboard: ```-p 5020:5020```
 * Wallboard: ```-p 40510:40510```
